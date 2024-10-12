@@ -16,6 +16,11 @@
 .jobs-container .job-list .other-jobs-container .job-card .job-card-title, .jobs-container .job-list .first-job .job-card-title, .jobs-container .job-list .other-jobs-container .job-card .job-card-cover, .jobs-container .job-list .first-job .job-card-cover, .jobs-container .job-list .other-jobs-container .job-card .job-card-description, .jobs-container .job-list .first-job .job-card-description {
   opacity: 0;
 }
+@media (max-width: 425px) {
+  .jobs-container .job-list .other-jobs-container .job-card .job-card-title, .jobs-container .job-list .first-job .job-card-title, .jobs-container .job-list .other-jobs-container .job-card .job-card-cover, .jobs-container .job-list .first-job .job-card-cover, .jobs-container .job-list .other-jobs-container .job-card .job-card-description, .jobs-container .job-list .first-job .job-card-description {
+    opacity: 1;
+  }
+}
 .jobs-container .job-list .other-jobs-container .job-card:hover .job-card-title, .jobs-container .job-list .first-job:hover .job-card-title, .jobs-container .job-list .other-jobs-container .job-card:hover .job-card-cover, .jobs-container .job-list .first-job:hover .job-card-cover, .jobs-container .job-list .other-jobs-container .job-card:hover .job-card-description, .jobs-container .job-list .first-job:hover .job-card-description {
   opacity: 1;
 }

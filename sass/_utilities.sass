@@ -20,6 +20,13 @@
     &:hover
         color: $primary-color
 
+    
+// MOBILE
+@mixin mobile
+    @media (max-width: 425px)
+        @content
+
+
 // PLACEHOLDER SELECTORS
 %title-text-shadow
     text-shadow: 3px 2px $black
@@ -36,14 +43,13 @@
     .job-card-title, .job-card-cover, .job-card-description
         opacity: 0
 
+        @include mobile
+            opacity: 1
+
     &:hover
         .job-card-title, .job-card-cover, .job-card-description
             opacity: 1
 
-// MOBILE
-@mixin mobile
-    @media (max-width: 425px)
-        @content
 
 // BTNS
 
