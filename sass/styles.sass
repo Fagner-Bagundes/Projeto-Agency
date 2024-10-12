@@ -9,6 +9,10 @@
     background-size: cover
     background-position: center
 
+    nav
+        @include mobile
+        display: none
+
     .nav-container
         display: flex
         justify-content: space-between
@@ -19,6 +23,9 @@
         padding: 1.5rem 2rem
         background-color: $black
         z-index:1000
+
+        @include mobile
+            padding: 1rem
 
         .brand
             color: $light-color
@@ -40,6 +47,9 @@
             font-size: 2rem
             color: $light-color
             display: none
+
+            @include mobile
+                display: block
     
     .title-container
         color: $light-color

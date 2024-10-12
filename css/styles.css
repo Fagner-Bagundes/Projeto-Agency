@@ -66,6 +66,9 @@ li {
   background-size: cover;
   background-position: center;
 }
+#main-banner nav {
+  display: none;
+}
 #main-banner .nav-container {
   display: flex;
   justify-content: space-between;
@@ -76,6 +79,11 @@ li {
   padding: 1.5rem 2rem;
   background-color: #000;
   z-index: 1000;
+}
+@media (max-width: 425px) {
+  #main-banner .nav-container {
+    padding: 1rem;
+  }
 }
 #main-banner .nav-container .brand {
   color: #fff;
@@ -104,6 +112,11 @@ li {
   font-size: 2rem;
   color: #fff;
   display: none;
+}
+@media (max-width: 425px) {
+  #main-banner .nav-container .fas.fa-bars {
+    display: block;
+  }
 }
 #main-banner .title-container {
   color: #fff;
