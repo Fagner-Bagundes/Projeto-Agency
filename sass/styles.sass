@@ -11,7 +11,7 @@
 
     nav
         @include mobile
-        display: none
+            display: none
 
     .nav-container
         display: flex
@@ -26,6 +26,7 @@
 
         @include mobile
             padding: 1rem
+            position: none
 
         .brand
             color: $light-color
@@ -59,6 +60,9 @@
         justify-content: center
         height: 100%
 
+        @include mobile
+            text-align: center
+
     h2
         font-size: 3rem
         @extend %title-text-shadow
@@ -82,12 +86,19 @@
         justify-content: space-around
         padding: 2rem
 
+        @include mobile
+            padding: 2rem 0
+
         .services-card
             width: 30%
             margin: 1%
             padding: 2rem
             border: 1px solid #ccc
             transition: .3s
+
+            @include mobile
+                width: 100%
+                margin-bottom: 2rem
 
             i
                 color: $primary-color
